@@ -15,42 +15,48 @@
     <!--Bootstrap Script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
+    <!--jQuery Script-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
     <!--Font Awesome Kit Script-->
     <script src="https://kit.fontawesome.com/96c00aaad8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg sticky-top bg-dark site-width">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Cole Harris Website</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#title">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Interests</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <!--Title Section-->
-    <section class="site-width" id="title">
+    <section id="title">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top site-width">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cole Harris Website</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#title">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#interests">Interests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class = "title-text container-fluid">
             <h1 class="title-name">Cole Harris</h1>
             <h3 class="title-info">Computer Science Student | Aspiring Software Developer</h3>
@@ -59,7 +65,7 @@
 
     <!--About Me Section-->
     <section id="about"></section>
-        <div class="site-width h-100">
+        <div class="light-section site-width h-100 about">
             <div class="row align-items-center h-100">
                 <div class="col">
                     <img class = "profile-pic" src="images/Profile-Pic-Thumbnail.jpg" alt="">
@@ -68,11 +74,10 @@
                     <p><b>Expected Graduation:</b> December 2023</p>
                     <p><b>Major GPA:</b> 4.0 / 4.0</p> 
                 </div>
-                <div class="col-9">
-                    <div></div>
+                <div id = "about-bio" class="col-8 align-items-center">
                     <h1>About Me</h1>
                     <p class="bio">Currently working towards a <b>B.S. in Computer Science at Colorado State University</b> with plans to <b>graduate in December 2023</b>. Previously graduated from 
-                        Colorado State University with a B.S. in Chemical and Biological Engineering in May 2020. <b>Worked in industry as a Controls Engineer, mainly working 
+                        Colorado State University with a B.S. in Chemical and Biological Engineering in May 2020. <b>Worked in industry as a Controls Engineer for 1.5 years, mainly working 
                         for Pharmaceutical and Water/Wastewater clients</b>. Main tasks included developing software design specifications, developing testing documentation, PLC programming, onsite 
                         commissioning, and communicating with the client with questions and answers towards the project.             
                     </p>
@@ -80,36 +85,128 @@
                         perform well, and are easily maintainable</b></p>
                 </div>
             </div>
-            <div class = "row">
-
-            </div>
         </div>
     </section>
     <section id="skills">
         <div class="dark-section site-width text-center">
             <h1>Skills</h1>
             <div class = "row">
-                <div class = "col skills-col">
+                <div class = "col">
                     <i class="fa-brands fa-java fa-7x skill-img"></i>
+                    <p>Java</p>
                 </div>
-                <div class = "col skills-col">
+                <div class = "col">
                     <i class="fa-brands fa-python fa-7x skill-img"></i>
+                    <p>Python</p>
                 </div>
-                <div class = "col skills-col">
+                <div class = "col">
                     <i class="fa-brands fa-html5 fa-7x skill-img"></i>
+                    <p>HTML</p>
                 </div>
-                <div class = "col skills-col">
+                <div class = "col">
                     <i class="fa-brands fa-css3-alt fa-7x skill-img"></i>
+                    <p>CSS</p>
                 </div>
-                <div class = "col skills-col">
+                <div class = "col">
                     <i class="fa-brands fa-js fa-7x skill-img"></i>
+                    <p>Javascript</p>
                 </div>
-                <div class = "col skills-col">
-                    <i class="fa-brands fa-cuttlefish fa-7x skill-img">++</i>
+                <div class = "col">
+                    <i class="fa-solid fa-c fa-7x skill-img">++</i>
+                    <p>C++</p>
+                </div>
+
+                <div class="container-fluid skills-container">
+                    <p class = "skills-p">Java</p>
+                    <div class="skills">
+                        <div class="filled-skill-bar java">50%</div>
+                    </div>
+                    <p class = "skills-p">Python</p>
+                    <div class = "skills">
+                        <div class="filled-skill-bar python">50%</div>
+                    </div>
+                    <p class = "skills-p">HTML</p>
+                    <div class = "skills">
+                        <div class="filled-skill-bar html">30%</div>
+                    </div>
+                    <p class = "skills-p">CSS</p>
+                    <div class = "skills">
+                        <div class="filled-skill-bar css">20%</div>
+                    </div>
+                    <p class = "skills-p">Javascript</p>
+                    <div class = "skills">
+                        <div class="filled-skill-bar javascript">20%</div>
+                    </div>
+                    <p class = "skills-p">C++</p>
+                    <div class = "skills">
+                        <div class="filled-skill-bar cplusplus">20%</div>
+                    </div>
                 </div>
     
             </div>
         </div>
+        <div class="dark-section site-width text-center">
+            <h1>Soft Skills</h1>
+            <div class = "row">
+                <div class = "col">
+                    <i class="fa-solid fa-comments fa-6x skill-img"></i>
+                    <p>Communication:</p>
+                    <p>Experience with communicating complex ideas with clients, communicating current status on projects internally, and working with interdisciplinary teams of the client, internal team, and contractors.</p>
+                </div>
+                <div class = "col">
+                    <i class="fa-solid fa-people-group fa-6x skill-img"></i>
+                    <p>Team Player:</p>
+                    <p>Experience with working with remote team members and team members in different states with projects staying within budget.</p>
+                </div>
+                <div class = "col">
+                    <i class="fa-solid fa-circle-info fa-6x skill-img"></i>
+                    <p>Detail Oriented:</p>
+                    <p>Experience working on large scale projects that require looking at small details during the engineering and development process.</p>
+                </div>
+                <div class = "col">
+                    <i class="fa-solid fa-folder-tree fa-6x skill-img"></i>
+                    <p>Organized:</p>
+                    <p>Experience working in an environment with multiple projects at the same time and organizing the tasks such that the projects are completed to the customers satisfaction.</p>
+                </div>
+            </div>
+        </div>
     </section>
+    <section id="interests">
+        <div class="dark-section site-width text-center">
+            <h1>Interests</h1>
+            <div class = "row">
+                <div class="col">
+                    <i class="fa-solid fa-laptop-code fa-7x skill-img"></i>
+                    <p>Full-Stack Web Development</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-chart-line fa-7x skill-img"></i>
+                    <p>Data Science</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-mobile-screen fa-7x skill-img"></i>
+                    <p>Mobile Applications</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-computer fa-7x skill-img"></i>
+                    <p>Desktop Applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="light-section site-width text-center">
+            <h1>Projects</h1>
+            <h2 class="coming-soon">Coming Soon!</h2>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="light-section site-width text-center">
+
+        </div>
+    </section>
+
+
+    <script src ="index.js" charset="utf-8"></script>
 </body>
 </html>
