@@ -35,7 +35,9 @@ function addActive() {
 
 if($('.navbar').length > 0){
     $(window).on("scroll load resize", function(){
-        checkScroll();
+        if (window.innerWidth > 840) {
+            checkScroll();
+        }
         adjustAboutBio();
         addActive();
     });
