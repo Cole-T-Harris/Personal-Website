@@ -136,17 +136,17 @@
                         <div class = "skills">
                             <div class="filled-skill-bar html">30%</div>
                         </div>
-                        <p class = "skills-p">CSS</p>
+                        <p class = "skills-p">C++</p>
                         <div class = "skills">
-                            <div class="filled-skill-bar css">15%</div>
+                            <div class="filled-skill-bar cplusplus">20%</div>
                         </div>
                         <p class = "skills-p">Javascript</p>
                         <div class = "skills">
                             <div class="filled-skill-bar javascript">15%</div>
                         </div>
-                        <p class = "skills-p">C++</p>
+                        <p class = "skills-p">CSS</p>
                         <div class = "skills">
-                            <div class="filled-skill-bar cplusplus">15%</div>
+                            <div class="filled-skill-bar css">15%</div>
                         </div>
                     </div>
         
@@ -332,8 +332,19 @@
         <section id="contact">
             <div class = "light-section site-width text-center">
                 <h1>Contact Me</h1>
-                <h4>Email: <a class = "contact-email"  href="mailto:cole.t.harr@gmail.com">cole.t.harr@gmail.com</a></h4>
-                <h4>Phone: (720) 315-8960</h4>
+                <form action="">
+                    <div class = "contact-form">
+                        <div class="mb-3">
+                            <label for="ContactSubject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="ContactSubject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="ContactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="ContactMessage" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-dark btn-lg sendEmail">Send Message</button>
+                </form>
             </div>
         </section>
     </div>

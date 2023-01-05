@@ -43,5 +43,12 @@ if($('.navbar').length > 0){
     });
 }
 
+$('.sendEmail').click(function (event) {
+    var email = 'cole.t.harr@gmail.com'
+    var subject = $('#ContactSubject').val()
+    var emailBody = $('#ContactMessage').val().replace(/\n/g, "%0D%0A")
+    document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody
+});
+
 
 

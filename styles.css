@@ -36,12 +36,16 @@ a:hover {
     color: black;
 }
 
+.contact-form {
+    text-align: left;
+}
+
 .csu-logo {
     width: 80px;
 }
 
 .cplusplus {
-    width: 15%;
+    width: 20%;
 }
 
 .css {
@@ -224,6 +228,10 @@ a:hover {
 @media (min-width:845px) {
     .about {
         text-align: left;
+    }
+
+    .contact-form {
+        padding: 0 15%;
     }
 
     .navbar {
