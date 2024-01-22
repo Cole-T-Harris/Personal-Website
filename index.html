@@ -76,7 +76,7 @@
                         <h2 class="q-stats">Quick Stats</h2>
                         <p><b>Current Degree:</b> B.S. Computer Science</p>
                         <p><b>Expected Graduation:</b> December 2023</p>
-                        <p><b>Major GPA:</b> 3.94 / 4.0</p> 
+                        <p><b>Major GPA:</b> 3.84 / 4.0</p> 
                     </div>
                     <div id = "about-bio" class="col-8 align-items-center">
                         <h1>About Me</h1>
@@ -116,37 +116,53 @@
                     </div>
                     <div class = "col">
                         <i class="fa-brands fa-js fa-7x skill-img"></i>
-                        <p>Javascript</p>
+                        <p>JavaScript</p>
                     </div>
                     <div class = "col">
                         <i class="fa-solid fa-c fa-7x skill-img">++</i>
                         <p>C++</p>
                     </div>
+                    <div class = "col">
+                        <i class="fa-brands fa-react fa-7x skill-img"></i>
+                        <p>React</p>
+                    </div>
     
                     <div class="container-fluid skills-container">
                         <p class = "skills-p">Java</p>
                         <div class="skills">
-                            <div class="filled-skill-bar java">40%</div>
+                            <div class="filled-skill-bar java">70%</div>
                         </div>
                         <p class = "skills-p">Python</p>
                         <div class = "skills">
-                            <div class="filled-skill-bar python">40%</div>
+                            <div class="filled-skill-bar python">60%</div>
                         </div>
                         <p class = "skills-p">HTML</p>
                         <div class = "skills">
-                            <div class="filled-skill-bar html">30%</div>
+                            <div class="filled-skill-bar html">50%</div>
                         </div>
                         <p class = "skills-p">C++</p>
                         <div class = "skills">
-                            <div class="filled-skill-bar cplusplus">20%</div>
+                            <div class="filled-skill-bar cplusplus">35%</div>
                         </div>
-                        <p class = "skills-p">Javascript</p>
+                        <p class = "skills-p">JavaScript</p>
                         <div class = "skills">
-                            <div class="filled-skill-bar javascript">15%</div>
+                            <div class="filled-skill-bar javascript">40%</div>
                         </div>
                         <p class = "skills-p">CSS</p>
                         <div class = "skills">
-                            <div class="filled-skill-bar css">15%</div>
+                            <div class="filled-skill-bar css">30%</div>
+                        </div>
+                        <p class = "skills-p">React</p>
+                        <div class = "skills">
+                            <div class="filled-skill-bar react">50%</div>
+                        </div>
+                        <p class = "skills-p">Spring</p>
+                        <div class = "skills">
+                            <div class="filled-skill-bar spring">30%</div>
+                        </div>
+                        <p class = "skills-p">django</p>
+                        <div class = "skills">
+                            <div class="filled-skill-bar django">30%</div>
                         </div>
                     </div>
         
@@ -181,14 +197,38 @@
         <section id="projects" class="anchor">
             <div class="light-section site-width text-center">
                 <h1>Projects</h1>
-                <div class="card" style="width: 18rem;">
-                    <img src="images/CS345ProjectAccuracy.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">CS345 Machine Learning Foundations and Practices: Final Project</h5>
-                      <p class="card-text">CS345 Final Project: Using a Convolutional Neural Network and transfer learning for Melanoma classification on skin lesion images.</p>
-                      <a href="https://github.com/Cole-T-Harris/CS345-Final-Project" class="btn btn-dark">Github Repository</a>
+                <div class="row">
+                    <div class="col card-column-styling d-flex align-items-center justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/CS345ProjectAccuracy.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">CS345 Machine Learning Foundations and Practices: Final Project</h5>
+                              <p class="card-text">CS345 Final Project: Using a Convolutional Neural Network and transfer learning for Melanoma classification on skin lesion images.</p>
+                              <a href="https://github.com/Cole-T-Harris/CS345-Final-Project" class="btn btn-dark">Github Repository</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="col card-column-styling d-flex align-items-center justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/django_backend.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Django Backend Hosted Website</h5>
+                              <p class="card-text">Django Backend that serves this webpage and react app and acts as a Restful API. Hosted utilizing Heroku with a custom domain forward to heroku app.</p>
+                              <a href="/" class="btn btn-dark">Go to HomePage</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card-column-styling d-flex align-items-center justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/Grocery_App.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Ordered Grocery List React App</h5>
+                              <p class="card-text">React App that sends API requests to Django Backend RestfulAPI that sends OAuth2.0 authenticated API requests to Kroger. Provides current store data and can export ordered list</p>
+                              <a href="/grocery_app/" class="btn btn-dark">Go To Web App</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="experience" class="anchor">
@@ -197,26 +237,54 @@
                     <h1 class = "text-center">Experience/Timeline</h1>
                 </div>
                 <div class = "timeline">
-                    <div class="timeline__component timeline__component--left">
-                        <div class = "timeline__date timeline__date--right">
-                            <h4>May 2022 - Present</h4>
-                        </div>
-                    </div>
-                    <div class = "timeline__middle">
-                        <div class = "timeline__point"></div>
-                    </div>
-                    <div class="timeline__component timeline__component--bg">
+                    <div class="timeline__component timeline__component--left timeline__component--bg">
                         <p><a href="https://compsci.colostate.edu/"><img class = "csu-logo" src="images/CSU-Ram-357.png" alt=""></a></p>
                         <h2 class="timeline__title"> B.S. Computer Science Student - Colorado State University</h2>
                         <p class = "timeline__paragraph">Current Course:</p>
-                        <p class = "timeline__paragraph"></p>
+                        <p class = "timeline__paragraph"><a href="https://www.cs.colostate.edu/~cs356/#/">CS354 System Security</a> | 
+                            <a href="https://www.cs.colostate.edu/~cs414/yr2023fa/#/">CS414 Object-Oriented Design</a> |
+                            <a href="https://www.cs.colostate.edu/~cs462/yr2023fa/#/">CS462 Engaging in Virtual Worlds</a>
+                        </p>
                         <p class = "timeline__paragraph">Completed Courses:</p>
                         <p class = "timeline__paragraph"><a href="https://www.cs.colostate.edu/~cs163/.Fall22/">CS163 Java Programming I (Java)</a> | 
                             <a href="https://www.cs.colostate.edu/~cs165/.Fall22/#/">CS165 Data Structures (Java)</a> | 
                             <a href="https://www.cs.colostate.edu/~cs220/fall22/#/">CS220 Discrete Structures (Python)</a> | 
                             <a href="https://cs.colostate.edu/~cs253/Fall22/">CS253 Software Development in C++ (C++)</a> | 
                             <a href="https://www.cs.colostate.edu/~cs250/">CS280A1/CS250 Foundations of Computer Systems (Java)</a> | 
-                            <a href="https://github.com/asabenhur/CS345/tree/master/fall22">CS345 Machine Learning Foundations and Practice (Python)</a></p>
+                            <a href="https://github.com/asabenhur/CS345/tree/master/fall22">CS345 Machine Learning Foundations and Practice (Python)</a> | 
+                            <a href="https://www.cs.colostate.edu/~cs314/yr2023sp/#/">CS314 Software Engineering (Java Spark / React)</a> | 
+                            <a href="https://www.cs.colostate.edu/~cs320/Spring23/#/">CS320 Algorithm Theory and Practice (Python)</a> | 
+                            <a href="https://www.cs.colostate.edu/~cs370/">CS370 Operating Systems (C / Java)</a> | 
+                            <a href="https://www.cs.colostate.edu/~cs430dl/#/">CS430 Database Management Systems (SQL / Java)</a>
+                        </p>
+                    </div>
+                    <div class = "timeline__middle">
+                        <div class = "timeline__point"></div>
+                    </div>
+                    <div class="timeline__component">
+                        <div class = "timeline__date">
+                            <h4>May 2022 - Present</h4>
+                        </div>
+                    </div>
+
+                    <div class="timeline__component timeline__component--left">
+                        <div class = "timeline__date timeline__date--right">
+                            <h4>May 2023 - August 2023</h4>
+                        </div>
+                    </div>
+                    <div class = "timeline__middle">
+                        <div class = "timeline__point"></div>
+                        <div class = "timeline__point"></div>
+                    </div>
+                    <div class="timeline__component timeline__component--bg">
+                        <p><a href="https://usa.visa.com/"><img class = "visa-logo" src="images/Visa.png" alt=""></a></p>
+                        <h2 class="timeline__title">Software Test Engineering Intern - Visa</h2>
+                        <p class = "timeline__paragraph">Developed and enhanced an in-house Software Test Automation tool leveraging Java and full-stack software development 
+                            technologies while following the Agile project methodology. Implemented a key feature enabling seamless data integration by pushing test execution 
+                            data to MongoDB. Designed and implemented a backend RESTful API interface using Spring, enabling efficient retrieval and management of software 
+                            test execution data. Additionally, crafted a front-end application utilizing React to visualize and present software test execution data effectively.</p>
+                        <p class = "timeline__paragraph"><strong>Skills:</strong> Maven · Artifactory · Jira · Bitbucket · Git · Agile Methodologies · React.js · tabler · Spring Framework · 
+                            MongoDB · Karate · Velocity Templates · Cascading Style Sheets (CSS) · HTML5 · JavaScript · Java</p>
                     </div>
     
                     <div class="timeline__component timeline__component--left timeline__component--bg">
@@ -354,7 +422,7 @@
             <a href="https://github.com/Cole-T-Harris"><i class="social-icon fa-brands fa-github fa-2x"></i></a>
             <a href="https://www.linkedin.com/in/cole-t-harris/"><i class="social-icon fa-brands fa-linkedin fa-2x"></i></a>
             <a href="mailto:cole.t.harr@gmail.com"><i class = "social-icon fa-solid fa-envelope fa-2x"></i></a>
-            <p>Built By Cole Harris 2022</p>
+            <p>Built By Cole Harris 2023</p>
         </div>
     </footer>
 
